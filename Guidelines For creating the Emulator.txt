@@ -1,0 +1,90 @@
+Guidelines For creating the Emulator:-
+
+Perquisites for Emulator creation in Android Studio 
+1.Downlaod the Android studio.
+2.Platform tools(Install at admin Tool )
+3.Sdk Tools(Install at Admin Level) 
+4.System requirement At least 8Gb ram with Graphics Card.
+5.System should be Higher Performance Mode ever time you work with Android studio it High Power consume task.
+
+Website for Android Studio Exe file :- https://developer.android.com/studio
+Where do I get the most recent version number of Build Tools?
+	i)Open the Android SDK Manager.
+	ii)In Android Studio go to Tools > Android > SDK Manager > Appearance & Behavior > System Settings > Android SDK
+	iii)Choose the SDK Tools tab.
+	iv)Select Android SDK Build Tools from the list
+	v)Check Show Package Details.
+Android Studio Inital setup. 
+Goto File->Settings
+1.First download the SDK Platform like Android version , API Level, Revision 
+2.Select the Required SDK Platform by checking the checkbox in the sdk Platform section.
+3.Download The required sdk tools.
+4.Create Emulator device with system requirements 
+Please Refer the Recordings for Detail Knowledge.
+ 
+Enviornment Variable For Android studio:-
+Android SDK environment variables:-
+ANDROID_HOME:Sets the path to the SDK installation directory. Once set, the value does not typically change and can be shared by multiple users on the same machine.
+	     ANDROID_SDK_ROOT, which also points to the SDK installation directory, is deprecated. If you continue to use it, 
+	     Android Studio and the Android Gradle plugin will check that the old and new variables are consistent.
+ANDROID_USER_HOME:Sets the path to the user preferences directory for tools that are part of the Android SDK. Defaults to $HOME/.android/.
+		  Some older tools, such as Android Studio 4.3 and earlier, do not read ANDROID_USER_HOME. To override the user preferences location for those older tools, set ANDROID_SDK_HOME to the parent directory you would like the .android directory to be created under.
+
+1.ANDROID HOME :- ANDROID_HOME/tools, ANDROID_HOME/tools/bin, and ANDROID_HOME/platform-tools.
+2.To set Java Environment Variables, you need to set,
+	JAVA_HOME: It points to the directory where the JDK is installed on the system.
+	PATH: It specifies where the operating system should look for executable files.
+
+Step 1: Download and install the latest JDK from the official Oracle website. To know how to download JDK on Windows OS, refer to this article: How to Install Java on Windows, Linux and 	macOS?
+Step 2: Set JAVA_HOME
+	Click Windows + S, search for “Environment Variables”, and click Edit the system environment variables. In the System Properties window, click Environment Variables.
+	Now, go to Environment Variable > System Variable section > click New.
+Step 3: Now we need to update the PATH variable. For this, open the C: drive, go to Program Files > Java > jdk-23 > bin folder, then copy the path.
+	To verify the Java compiler, run the below command:
+	Javac -version 
+
+SDK Tools 
+differences between tools, platform-tools and build-tools:
+
+Android SDK Tools
+	Location: $ANDROID_HOME/tools
+Main tools: ant scripts (to build your APKs) and ddms (for debugging)
+Android SDK Platform-tools
+	Location: $ANDROID_HOME/platform-tools
+Main tool: adb (to manage the state of an emulator or an Android device)
+Android SDK Build-tools
+	Location: $ANDROID_HOME/build-tools/$VERSION/
+
+
+Android Emulator in Visual Studio code:-
+1.Extension name :-Android iOS Emulator
+			Diemas Michiels
+			diemas.dev
+		   Run Android emulator and iOS simulator easily from VScode!
+2.Emulator: Emulator Path
+	The absolute path of your Android emulator directory containing the emulator script.
+	 ~/Library/Android/sdk/emulator
+3.Emulator: Emulator Path Windows
+	The absolute path of the Android emulator directory on your Windows containing the emulator script.
+	C:\Users\akhilesh.behera\AppData\Local\Android\Sdk\emulator
+4.bootup from emulator icon in the right top corner 
+5.Menu will popup and select the Emulator device you want to boot.
+6.Wait the Device to boot up.
+
+Command Line support for Non rooted Device 
+1.Open Chrome In virtual Mobile device 
+2.in search write chrome://flags
+3.After flags is open search for commands enable for command in  non rooted oprions.
+4. save refresh the instance.
+
+
+Now execute the script from the playwright
+Extension
+	Playwright Test for VSCode
+	Microsoft
+	microsoft.com 1,249,873 (36)
+	Run Playwright Test tests in Visual Studio Code.
+Refer to the recordings for more details 
+
+									  !!Thank You!!
+									!!!!Happy Coding !!!
